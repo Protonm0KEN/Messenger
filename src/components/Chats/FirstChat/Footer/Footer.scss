@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: #323232;
+  border-radius: 0 0 10px 10px;
+
+  &__form {
+    &-input {
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+
+      &::placeholder {
+        color: white;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+  }
+}
+
+.send-img__button {
+  cursor: pointer;
+}

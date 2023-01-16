@@ -1,0 +1,13 @@
+.second-chat__message {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+  padding: 7px;
+  margin-left: 245px;
+
+  &-content {
+    padding: 7px;
+    background: #D0DCFF;
+    border-radius: 15px 15px 0 15px;
+  }
+}

@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.first-chat__image {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background: #C4BFFF;
+  border-radius: 15px 15px 15px 15px;
+  padding: 8px;
+  width: fit-content;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  &-img {
+    border-radius: 15px 15px 15px 15px;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  &-comment {
+    border-top: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-top: 3px;
+    text-align: center;
+    padding-top: 3px;
+  }
+}
+
+.second-chat__image {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background: #D0DCFF;
+  border-radius: 15px 15px 15px 15px;
+  padding: 8px;
+  width: fit-content;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  &-img {
+    border-radius: 15px 15px 15px 15px;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  &-comment {
+    padding-top: 3px;
+    text-align: center;
+    margin-top: 3px;
+    border-top: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+}
