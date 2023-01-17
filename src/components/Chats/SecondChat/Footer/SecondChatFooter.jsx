@@ -5,10 +5,6 @@ import {useState} from "react";
 
 export const SecondChatFooter = ({setMessages, messages}) => {
     const [value, setValue] = useState('');
-    const onChangeValue = (e) => {
-        e.preventDefault()
-        setValue(e.target.value)
-    }
     const sendMessage = (e) => {
         if (value) {
             e.preventDefault();
@@ -33,7 +29,9 @@ export const SecondChatFooter = ({setMessages, messages}) => {
         <>
             <footer className="footer">
                 <form onSubmit={sendMessage} action="" className="footer__form">
-                    <input onChange={onChangeValue} value={value} type="text" className="footer__form-input"
+                    <input onChange={(e) => {
+                        e.preventDefault()
+                        setValue(e.target.value)}} value={value} type="text" className="footer__form-input"
                            placeholder="Написать сообщение..."/>
                 </form>
                 <div className="footer__buttons">
